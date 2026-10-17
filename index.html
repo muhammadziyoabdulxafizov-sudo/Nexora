@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MyWebsite — Kreativ dizayn va texnologiya</title>
+  <meta name="description" content="MyWebsite — zamonaviy web-dizayn, kreativ loyihalar, animatsiyalar va yangi texnologiyalar olami.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080b14">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MyWebsite — Kreativ dizayn">
+  <meta property="og:description" content="Zamonaviy dizayn va kreativ loyihalar olami.">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="MyWebsite bosh sahifasi">
+      MY<span>WEBSITE</span><i>.</i>
+    </a>
+
+    <nav class="nav-links" aria-label="Asosiy menyu">
+      <a href="#home">Bosh sahifa</a>
+      <a href="#about">Biz haqimizda</a>
+      <a href="#portfolio">Loyihalar</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle"
+      type="button" aria-label="Rang rejimini almashtirish"
+      title="Yorug‘ yoki qorong‘i rejim">
+      <span id="themeIcon" aria-hidden="true">☀</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="status">
+          <span class="status-dot"></span>
+          KREATIVLIK VA TEXNOLOGIYA
+        </div>
+
+        <h1>
+          G‘oyalarni<br>
+          <span class="gradient-text">haqiqatga</span> aylantir.
+        </h1>
+
+        <p class="hero-description">
+          Kelajak dizayni, zamonaviy texnologiyalar va
+          cheksiz kreativ imkoniyatlar bir joyda.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#portfolio" class="button button-primary magnetic">
+            Loyihalarni ko‘rish <span>↗</span>
+          </a>
+          <a href="#about" class="button button-secondary">
+            Ko‘proq bilish
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>01</strong>
+            <span>Kreativ dizayn</span>
+          </div>
+          <div>
+            <strong>02</strong>
+            <span>Yangi g‘oyalar</span>
+          </div>
+          <div>
+            <strong>03</strong>
+            <span>Raqamli olam</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-ring ring-one"></div>
+        <div class="visual-ring ring-two"></div>
+
+        <div class="visual-card glass">
+          <div class="visual-card-top">
+            <span class="mini-dot"></span>
+            <span class="mini-dot"></span>
+            <span class="mini-dot"></span>
+            <span class="visual-label">CREATIVE STUDIO</span>
+          </div>
+
+          <div class="visual-art">
+            <div class="art-orb"></div>
+            <div class="art-square"></div>
+            <div class="art-circle"></div>
+          </div>
+
+          <div class="visual-card-bottom">
+            <div>
+              <span class="muted-label">YANGI AVLOD</span>
+              <h2>Think beyond.</h2>
+            </div>
+            <span class="arrow-circle">↗</span>
+          </div>
+        </div>
+
+        <div class="floating-tag tag-top">✦ Creative</div>
+        <div class="floating-tag tag-bottom">Digital future ↗</div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">BIZNING DUNYOMIZ</p>
+        <h2>Oddiy emas.<br><span class="gradient-text">O‘zgacha.</span></h2>
+        <p>Har bir detalda g‘oya, har bir harakatda maqsad.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card glass reveal">
+          <span class="feature-number">01 / DESIGN</span>
+          <div class="feature-icon">✳</div>
+          <h3>Zamonaviy dizayn</h3>
+          <p>Toza interfeys, puxta ranglar va har bir qurilmaga mos sahifalar.</p>
+          <span class="feature-arrow">↗</span>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <span class="feature-number">02 / MOTION</span>
+          <div class="feature-icon">◉</div>
+          <h3>Jonli animatsiya</h3>
+          <p>Silliq o‘tishlar, jonli fon va foydalanuvchi bilan interaktiv aloqa.</p>
+          <span class="feature-arrow">↗</span>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <span class="feature-number">03 / CODE</span>
+          <div class="feature-icon">⌘</div>
+          <h3>Aqlli texnologiya</h3>
+          <p>HTML, CSS va JavaScript yordamida yaratilgan imkoniyatlar.</p>
+          <span class="feature-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section portfolio-section" id="portfolio">
+      <div class="portfolio-heading reveal">
+        <div>
+          <p class="eyebrow">TANLANGAN ISHLAR</p>
+          <h2>Kreativ <span class="gradient-text">loyihalar.</span></h2>
+        </div>
+        <p>Har bir g‘oya — yangi imkoniyat.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="project-card reveal">
+          <div class="project-art art-one">
+            <div class="project-shape shape-one"></div>
+            <div class="project-shape shape-two"></div>
+            <span class="art-caption">01 — DIGITAL</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-type">WEB DESIGN</span>
+              <h3>Digital Universe</h3>
+            </div>
+            <a href="#contact" class="project-link"
+              aria-label="Digital Universe loyihasi haqida so‘rash">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-two">
+            <div class="project-orbit orbit-a"></div>
+            <div class="project-orbit orbit-b"></div>
+            <div class="project-core">N</div>
+            <span class="art-caption">02 — CREATIVE</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-type">BRANDING</span>
+              <h3>Nova Identity</h3>
+            </div>
+            <a href="#contact" class="project-link"
+              aria-label="Nova Identity loyihasi haqida so‘rash">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-three">
+            <div class="dashboard">
+              <div class="dashboard-line"></div>
+              <div class="dashboard-chart"></div>
+              <div class="dashboard-bars"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <span class="art-caption">03 — FUTURE</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-type">INTERACTIVE UI</span>
+              <h3>Future Interface</h3>
+            </div>
+            <a href="#contact" class="project-link"
+              aria-label="Future Interface loyihasi haqida so‘rash">↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="portfolio-note reveal">
+        Eslatma: bu kartalar hozircha namunaviy konseptlar, haqiqiy mijoz ishlari emas.
+      </p>
+    </section>
+
+    <section class="contact-section section reveal" id="contact">
+      <p class="eyebrow">KEYINGI QADAM</p>
+      <h2>Katta g‘oyalar<br><span class="gradient-text">shu yerdan boshlanadi.</span></h2>
+      <p>Bizning raqamli olamimizni birgalikda rivojlantiramiz.</p>
+      <a href="mailto:hello@example.com" class="button button-primary magnetic">
+        Biz bilan bog‘lanish ↗
+      </a>
+      <p class="contact-note">
+        Namuna email: hello@example.com — haqiqiy emailing bilan almashtir.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">MY<span>WEBSITE</span><i>.</i></a>
+    <p>© <span id="year"></span> MyWebsite. Barcha huquqlar himoyalangan.</p>
+    <a href="#home" class="back-top">Yuqoriga ↑</a>
+  </footer>
+</body>
+</html>
