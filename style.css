@@ -122,7 +122,7 @@ main,
 /* Navigation */
 
 .navbar {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   min-height: 78px;
   padding: 16px 7%;
